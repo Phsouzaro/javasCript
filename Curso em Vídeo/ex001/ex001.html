@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hora do dia</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            text-align: center;
+            background-color: rgb(100, 100, 100);
+        }
+        h1{
+            padding: 20px;
+            color: white;
+        }
+        .container{
+            width: 470px;
+            height: 250px;
+            margin: 0 auto;
+            background-color: white;
+            border-radius: 20px;
+        }
+        .container > p{
+            font: normal 14pt Arial;
+            padding: 20px 0;
+        }
+
+        .container > div#imagem{
+            height: 150px;
+            width: 150px;
+            margin: 0 auto;
+            background-color: gray;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            background-size: cover;
+        }
+
+        span#cursoEmVideo{
+            color: white;
+            display: block;
+            margin: 15px 0;
+        }
+    </style>
+</head>
+<body>
+<!-------------------------------------------->
+    <h1>Hora do Dia</h1>
+    <!---------------------------------------------->
+    <div class="container">
+        <p>Agora são <span id="hora"></span> Horas</p>
+        <div id="imagem"></div>
+    </div>
+    <span id='cursoEmVideo'>#CursoEmVideo</span>
+
+    <script>
+        /*variaveis declaradas no inicio do codigo*/
+        var imagem = document.querySelector('div#imagem')
+        var hr = document.querySelector('span#hora')
+        var data = new Date()
+        var horaDoDia = data.getHours()
+        /*fim das variaveis declaradas no inicio do codigo*/
+        /****************************************************/
+        /* Funcao para mudar a imagem dependente da hora do dia*/
+        function atualizaHora(){
+            hr.innerHTML = horaDoDia
+          if(horaDoDia > 18 || horaDoDia < 6){
+                imagem.style.backgroundImage = 'url("noite.jpg")'
+            }else if( horaDoDia < 12){
+                imagem.style.backgroundImage = 'url("dia.jpg")'
+            }else{
+                imagem.style.backgroundImage = 'url("tarde.png")'
+            }
+        }
+        /* Fim da funcao para mudar a imagem dependente da hora do dia*/
+        /****************************************************/
+        atualizaHora()//chamando funcao de mudar imagem
+        
+    </script>
+</body>
+</html>

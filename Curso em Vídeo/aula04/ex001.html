@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Meu primeiro programa</title>
+        <style>
+            body{
+                background-color: #9999dd;
+                color: white;
+                font: normal 20pt Arial;
+            }
+            h1{
+                color: yellow;
+            }
+        </style>
+    </head>
+    <body>
+
+        <h1>Olá, Mundo!</h1>
+        <p>Agora me livrei da maldição</p>
+
+        <script>
+            window.alert('Agora sim me livrei da maldição!')
+            
+            var nome = window.prompt('Qual é  seu nome?')
+            window.alert('Olá '+ nome)
+
+            var confirmacao = window.confirm('Esta gostando de JS?')
+            if(confirmacao==true){
+                window.alert('fico feliz que esta gostando')
+                
+            }else{
+                window.alert('é uma pena, mas você aprenderá mais adiante')
+            }
+
+        </script>
+    </body>
+</html>

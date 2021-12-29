@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>  
+        <label for="txtpais" style='Display: block; '>Qual País você nasceu</label>
+        <input type="text" name="txtpais" id="txtpais" style='Display: block; padding: 5px; margin-top: 10px;'>
+        <input type="button" value="Enviar" onclick="pais()"style='Display: block; padding: 5px; margin-top: 10px;'>
+
+        <div id="res">
+
+        </div>
+        <script>
+            function pais(){
+                var pais = document.querySelector('input#txtpais')
+                var res = document.querySelector('div#res')
+                var p = pais.value.toLowerCase()
+
+                if(p == 'brasil'){
+                    res.innerHTML = `<p>Você é do Páis: ${p}</p>`
+                    res.innerHTML += `<p>Sendo assim voce é Brasileiro</p>`
+                }else{
+                    res.innerHTML = `<p>Você é do Páis: ${p}</p>`
+                    res.innerHTML += `<p>Sendo assim voce é Estrangeiro</p>`
+                }
+            }
+        </script>
+</body>
+</html>

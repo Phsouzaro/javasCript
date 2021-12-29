@@ -1,0 +1,59 @@
+*{
+ padding: 0;
+ margin: 0;
+}
+body{
+ font: normal 12pt;
+}
+header{
+ text-align: center;
+}
+header h1{
+ padding: 2rem;
+}
+div.container{
+ width: 800px;
+ margin: 0 auto;
+}
+div.container div.container-columns{
+ display: flex;
+ justify-content: space-around;
+ text-align: center;
+}
+.title-xs{
+ display: none;
+}
+div.column ul#nomes li{
+ padding: 2px;
+ background-color: #fff;
+ list-style: none;
+}
+div.clues ul{
+     display: flex;
+   flex-flow: wrap;
+}
+div.clues ul li{
+ list-style: none;
+ margin-top: 10px;
+ border-bottom: solid 1px rgba(0,0,0, 0.3);
+ width: 398px;
+}
+div.column ul{
+ background-color: #ccc;
+}
+div.column ul.house li{
+ list-style: none;
+ padding: 4px;
+}
+div.column ul.house li select{
+ width: 100px;
+}
+footer{
+ text-align: center;
+}
+footer h5{
+ padding: 20px;
+}
+
+/*Some Configs*/
+

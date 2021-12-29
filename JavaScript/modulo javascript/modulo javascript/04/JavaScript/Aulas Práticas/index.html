@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+</head>
+<body>
+
+
+<script>
+	window.onload = function(){
+
+		var animal = {};
+
+		animal.nome = [];
+		animal.idade = [];
+		animal.peso = [];
+		animal.altura = [];
+		animal.resultado = [];
+		animal.calculoIMC = [];
+
+		//animal 1;
+
+		animal.nome [0] = 'Anne';
+		animal.idade [0] = 22;
+		animal.peso [0] = 120; //peso em gramas
+		animal.altura[0] = 165;//altura em cm
+
+		animal.resultado [0] = 
+		[animal.nome [0],
+		 animal.idade [0]+' Anos',
+		 animal.peso [0]+'Kg',
+		 animal.altura[0]+'cm'
+		];
+
+		 animal.calculoIMC[0] = [animal.peso[0]*animal.peso[0]/animal.altura[0]];
+
+		console.log(animal.resultado[0]);
+
+	}
+</script>
+</body>
+</html>

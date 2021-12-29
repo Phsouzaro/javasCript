@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Meu primeiro programa</title>
+        <style>
+            body{
+                font: normal 20px Arial;
+                background-color: gray;
+                color: white;
+            }
+            h3{
+                color: rgb(102, 102, 9);
+            }
+
+            h3 > strong{
+                padding: 5px;
+                border: 1px solid #000;
+                background-color: rgb(19, 101, 104);
+                color: #fff;
+                font: italic 30px Arial;
+                box-shadow: #000 5px 1px 1px 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <script>
+            var nome = prompt('Qual seu nome?')
+            document.writeln(`Olá ${nome}, seu nome tem um total de ${nome.length} letras </br>`)
+            document.writeln(`Seu nome em maiusculo fica assim ${nome.toUpperCase()}</br>`)
+            document.writeln(`Seu nome em minusculo fica assim ${nome.toLowerCase()}</br>`)
+
+            document.write(`<h3> Agora vamos estilizar um pouco seu nome <strong>${nome}</strong></h3>`)
+
+            document.write(`Agora vamos mostrar um pouco de formatacao de numeros ta bom ${nome}?</br>`)
+
+            var s = 2897.5
+
+            document.write(`</br>Esse é seu salario sem formatacao ${s}`)
+            document.write(`</br>Esse já é o seu salario com duas casas ${s.toFixed(2)}`)
+            document.write(`</br>Esse é o seu salario trocando . por , olha só ${s.toFixed(2).replace('.', ',')}`)
+            document.write(`</br>Esse já é o seu salario em Dolar ${s.toLocaleString('pt-BR', {style: 'currency', currency: 'USD'})}`)
+
+
+
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detran</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+
+        }
+        body{
+            font: normal 20pt Arial;
+            background-color: gainsboro;
+        }
+        .container{
+            margin: 0 auto;
+            width: 900px;
+            text-align: -webkit-center;
+        }
+
+        .form{
+            display: flex;
+            flex-direction: column;
+            width: 600px;
+        }
+        .form input[type='number']{
+            padding: 10px;
+            font: bold 20pt Arial;
+        }
+        .form input[type='number']::placeholder{
+            font: bold 20pt Arial;
+            text-align: center;
+        }
+        .form input[type='button'] {
+            margin-top: 20px;
+            padding: 10px;
+            font: bold 20pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Sistema de Multas</h1>
+        <div class="form">
+            <label for="txtvel">Velocidade do carro</label>
+            <input type="number" name="txtvel" id="txtvel" placeholder="Digite sua velocidade em Km/h">
+            <input type="button" value="verificar" onclick="calcular()">
+        </div>
+        <div class="container">
+            <div class="res">
+
+            </div>
+        </div>
+    </div>
+        <script>
+            
+            function calcular(){
+                var txtv = document.querySelector('input#txtvel')
+                var vel = Number(txtv.value)
+                var res = document.querySelector('div.res')
+                
+                if(vel > 80){
+                    var texto = `Sua velocidade de <strong>${vel}</strong>km/h foi acima da permitida e você será MULTADO`
+                    res.innerHTML = texto
+
+                }else if(vel<= 80 && vel > 0){
+                    var texto = 'Você esta dentro da velocidade permitida de <strong>80</strong>km/h'
+                    res.innerHTML = texto
+                }else{
+                    res.innerHTML = 'Você esta Parado'
+                }
+            }
+
+        </script>
+</body>
+</html>

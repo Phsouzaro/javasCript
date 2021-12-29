@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analisador de Números</title>
+    <link rel="stylesheet" href="stylo.css">
+</head>
+<body>
+    <header>
+        <h1>Analisador de Números</h1>
+    </header>
+    <section>
+        <div id='conteudo'>
+            <p>Número (entre 1 e 100) <input type="number" name="numero" id="txtnumero">
+            <input type="button" value="Adicionar" id='btn1' onclick="adicionar()"></p>
+        </div>
+        <div id='resultado'>
+            <select name="opcoes" id="opcoes" style="display:block; width: 150px; height: 100px;" multiple>
+
+            </select>
+            <input type="button" value="Finalizar" id='btn2' onclick="finalizar()" style='margin-top: 20px;'>
+        </div><!---->
+        <div id='finalizar'></div>
+    </section>
+    <footer>
+        <p>&copy; CursoEmVideo</p>
+    </footer>
+    <script src="codigo.js"></script>
+</body>
+</html>

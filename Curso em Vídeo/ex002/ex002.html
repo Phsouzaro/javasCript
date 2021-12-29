@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de Idade</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            text-align: center;
+            background-color: rgb(110, 210, 250);
+        }
+        div.clear{
+            clear: both;
+        }
+        h1{
+            padding: 30px;
+        }
+        div.container{
+            width: 470px;
+            min-height: 170px;
+            margin: 0 auto;
+            background-color: whitesmoke;
+            border-radius: 20px;
+        }
+        div.seguraConteudo{
+            width: 470px;
+            padding: 30px 10px;
+            float: left;
+            position: relative;
+        }
+        div.seguraConteudo > input[type='button']{
+            float: left;
+        }
+        div.ano{
+            float: left;
+        }
+        div.sexo{
+            float: left;
+            padding: 15px 0;
+        }
+        #p2{
+            padding: 20px 0;
+            float: left;
+        }
+        .imagem{
+            width: 100px;
+            height: 100px;
+            background-image: url(mulher.jpg);
+            background-size: cover;
+            margin: 0 auto;
+            display: none;
+        }
+
+
+    </style>
+</head>
+<body>
+    
+    <h1>Verificador de Idade</h1>
+
+    <div class="container"><!--container-->
+        <div class="seguraConteudo"><!--seguraConteudo-->
+            <div class="ano"><!--Ano-->
+                <!-------------------------------------------------->
+                <label for="anoNascimento">Ano de Nascimento:</label>
+                <input type="number" name="anoNascimento" id="anoNascimento">
+                <!-------------------------------------------------->
+            </div><!--Ano-->
+            <div class="clear"></div><!--clear-->
+            <div class="sexo"><!--Sexo-->
+                <!-------------------------------------------------->
+                <span>Sexo:</span>
+                <input type="radio" id="masculino" name="drone" value="Masculino" checked>
+                <label for="masculino">Masculino</label>
+                <!-------------------------------------------------->
+                <input type="radio" id="feminino" name="drone" value="Feminino">
+                <label for="feminino">Feminino</label>
+            </div><!--Sexo-->
+            <!-------------------------------------------------->
+            <div class="clear"></div><!--clear-->
+            <input type="button" value="Verificar" onclick="fazAcao()">
+            <div class="clear"></div><!--clear-->
+            <!-------------------------------------------------->
+            <p id='resultadoSexo-Idade' style ='display: none;'>Você é do sexo <span></span> e tem <span></span> Anos!</p>
+            <!-------------------------------------------------->
+            <div class="imagem"></div>
+            <!-------------------------------------------------->
+            <p id="p2">Preencha os dados acima para ver o resultado!</p>
+            <div class="clear"></div><!--clear-->
+            <!-------------------------------------------------->
+        </div><!--seguraConteudo-->
+
+    </div><!--container-->
+    <span id="cursoEmVideo" style="display: block; padding: 20px;">#CursoEmVideo</span>
+
+    <script>
+        /* Seletor*/
+        var anoNascimento = document.querySelector("input#anoNascimento")
+        var masculino = document.querySelector("input#masculino")
+        var feminino = document.querySelector("input#feminino")
+        /* Seletor*/
+        /*********/
+        /*********/
+
+    </script>
+</body>
+</html>

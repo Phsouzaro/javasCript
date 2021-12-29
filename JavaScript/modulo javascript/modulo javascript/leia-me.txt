@@ -1,0 +1,2 @@
+- Aqui estão todas as aulas do módulo javascript 
+- Seguindo a mesma ordem da listagem das aulas no site.

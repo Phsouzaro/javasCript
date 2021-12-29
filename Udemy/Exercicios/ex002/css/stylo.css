@@ -1,0 +1,11 @@
+.form {
+ display: flex;
+ flex-direction: column;
+ width: 200px;
+}
+.form input{
+ width: 96%;
+}
+.form label{
+ padding: 5px 0;
+}

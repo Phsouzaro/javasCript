@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Teste de Einstein</title>
+ <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+  <header>
+    <h1>Teste de Einstein</h1>
+  </header>
+  <section>
+    <div class='container'>
+      <div class="container-columns">
+        <div class="column">
+          <span>&nbsp;</span>
+          <ul id='nomes'>
+            <li>Cor</li>
+            <li>Nacionalidade</li>
+            <li>Bebida</li>
+            <li>Cigarro</li>
+            <li>Animal</li>
+          </ul>
+        </div>
+        <div class="column">
+          <span class="title">Casa #1</span>
+          <span class="title-xs">#1</span>
+          <ul class="house">
+            <li>
+              <select class='cores' onchange="aguardaEvento()">
+                <option value="-1"></option>
+                <option value="0">amarela</option>
+                <option value="1">azul</option>
+                <option value="2">branca</option>
+                <option value="3">verde</option>
+                <option value="4">vermelha</option>
+              </select>
+            </li>
+            <li>
+              <select>
+                <option value="-1"></option>
+                <option value="0">alemão</option>
+                <option value="1">dinamarquês</option>
+                <option value="2">inglês</option>
+                <option value="3">norueguês</option>
+                <option value="4">sueco</option>
+              </select>
+            </li>
+            <li>
+              <select>
+                <option value="-1"></option>
+                <option value="0">água</option>
+                <option value="1">café</option>
+                <option value="2">chá</option>
+                <option value="3">cerveja</option>
+                <option value="4">leite</option>
+              </select>
+            </li>
+            <li>
+              <select>
+                <option value="-1"></option>
+                <option value="0">Blends</option>
+                <option value="1">Blue Master</option>
+                <option value="2">Dunhill</option>
+                <option value="3">Pall Mall</option>
+                <option value="4">Prince</option>
+              </select>
+            </li>
+            <li>
+              <select>
+                <option value="-1"></option>
+                <option value="0">cachorros</option>
+                <option value="1">cavalos</option>
+                <option value="2">gatos</option>
+                <option value="3">pássaros</option>
+                <option value="4">peixes</option>
+              </select>
+            </li>
+          </ul>
+        </div>
+        <div class="column">
+          <span class="title">Casa #2</span>
+          <span class="title-xs">#2</span>
+          <ul class="house">
+            <li>
+              <select class='cores' onchange="aguardaEvento()">
+                <option value="-1"></option>
+                <option value="0">amarela</option>
+                <option value="1">azul</option>
+                <option value="2">branca</option>
+                <option value="3">verde</option>
+                <option value="4">vermelha</option>
+              </select>
+            </li>
+            <li>
+              <select>
+                <option value="-1"></option>
+                <option value="0">alemão</option>
+                <option value="1">dinamarquês</option>
+                <option value="2">inglês</option>
+                <option value="3">norueguês</option>
+                <option value="4">sueco</option>
+              </select>
+            </li>
+            <li>
+              <select>
+                <option value="-1"></option>
+                <option value="0">água</option>
+                <option value="1">café</option>
+                <option value="2">chá</option>
+                <option value="3">cerveja</option>
+                <option value="4">leite</option>
+              </select>
+            </li>
+            <li>
+              <select>
+                <option value="-1"></option>
+                <option value="0">Blends</option>
+                <option value="1">Blue Master</option>
+                <option value="2">Dunhill</option>
+                <option value="3">Pall Mall</option>
+                <option value="4">Prince</option>
+              </select>
+            </li>
+            <li>
+              <select>
+                <option value="-1"></option>
+                <option value="0">cachorros</option>
+                <option value="1">cavalos</option>
+                <option value="2">gatos</option>
+                <option value="3">pássaros</option>
+                <option value="4">peixes</option>
+              </select>
+            </li>
+          </ul>
+        </div>
+        <div class="column">
+          <span class="title">Casa #3</span>
+          <span class="title-xs">#3</span>
+          <ul class="house">
+            <li>
+              <select class='cores' onchange="aguardaEvento()">
+                <option value="-1"></option>
+                <option value="0">amarela</option>
+                <option value="1">azul</option>
+                <option value="2">branca</option>
+                <option value="3">verde</option>
+                <option value="4">vermelha</option>
+              </select>
+            </li>
+            <li>
+              <select>
+                <option value="-1"></option>
+                <option value="0">alemão</option>
+                <option value="1">dinamarquês</option>
+                <option value="2">inglês</option>
+                <option value="3">norueguês</option>
+                <option value="4">sueco</option>
+              </select>
+            </li>
+            <li>
+              <select>
+                <option value="-1"></option>
+                <option value="0">água</option>
+                <option value="1">café</option>
+                <option value="2">chá</option>
+                <option value="3">cerveja</option>
+                <option value="4">leite</option>
+              </select>
+            </li>
+            <li>
+              <select>
+                <option value="-1"></option>
+                <option value="0">Blends</option>
+                <option value="1">Blue Master</option>
+                <option value="2">Dunhill</option>
+                <option value="3">Pall Mall</option>
+                <option value="4">Prince</option>
+              </select>
+            </li>
+            <li>
+              <select>
+                <option value="-1"></option>
+                <option value="0">cachorros</option>
+                <option value="1">cavalos</option>
+                <option value="2">gatos</option>
+                <option value="3">pássaros</option>
+                <option value="4">peixes</option>
+              </select>
+            </li>
+          </ul>
+        </div>
+        <div class="column">
+          <span class="title">Casa #4</span>
+          <span class="title-xs">#4</span>
+          <ul class="house">
+            <li>
+              <select class='cores' onchange="aguardaEvento()">
+                <option value="-1"></option>
+                <option value="0">amarela</option>
+                <option value="1">azul</option>
+                <option value="2">branca</option>
+                <option value="3">verde</option>
+                <option value="4">vermelha</option>
+              </select>
+            </li>
+            <li>
+              <select>
+                <option value="-1"></option>
+                <option value="0">alemão</option>
+                <option value="1">dinamarquês</option>
+                <option value="2">inglês</option>
+                <option value="3">norueguês</option>
+                <option value="4">sueco</option>
+              </select>
+            </li>
+            <li>
+              <select>
+                <option value="-1"></option>
+                <option value="0">água</option>
+                <option value="1">café</option>
+                <option value="2">chá</option>
+                <option value="3">cerveja</option>
+                <option value="4">leite</option>
+              </select>
+            </li>
+            <li>
+              <select>
+                <option value="-1"></option>
+                <option value="0">Blends</option>
+                <option value="1">Blue Master</option>
+                <option value="2">Dunhill</option>
+                <option value="3">Pall Mall</option>
+                <option value="4">Prince</option>
+              </select>
+            </li>
+            <li>
+              <select>
+                <option value="-1"></option>
+                <option value="0">cachorros</option>
+                <option value="1">cavalos</option>
+                <option value="2">gatos</option>
+                <option value="3">pássaros</option>
+                <option value="4">peixes</option>
+              </select>
+            </li>
+          </ul>
+        </div>
+        <div class="column">
+          <span class="title">Casa #5</span>
+          <span class="title-xs">#5</span>
+          <ul class="house">
+            <li>
+              <select class='cores' onchange="aguardaEvento()">
+                <option value="-1"></option>
+                <option value="0">amarela</option>
+                <option value="1">azul</option>
+                <option value="2">branca</option>
+                <option value="3">verde</option>
+                <option value="4">vermelha</option>
+              </select>
+            </li>
+            <li>
+              <select>
+                <option value="-1"></option>
+                <option value="0">alemão</option>
+                <option value="1">dinamarquês</option>
+                <option value="2">inglês</option>
+                <option value="3">norueguês</option>
+                <option value="4">sueco</option>
+              </select>
+            </li>
+            <li>
+              <select>
+                <option value="-1"></option>
+                <option value="0">água</option>
+                <option value="1">café</option>
+                <option value="2">chá</option>
+                <option value="3">cerveja</option>
+                <option value="4">leite</option>
+              </select>
+            </li>
+            <li>
+              <select>
+                <option value="-1"></option>
+                <option value="0">Blends</option>
+                <option value="1">Blue Master</option>
+                <option value="2">Dunhill</option>
+                <option value="3">Pall Mall</option>
+                <option value="4">Prince</option>
+              </select>
+            </li>
+            <li>
+              <select>
+                <option value="-1"></option>
+                <option value="0">cachorros</option>
+                <option value="1">cavalos</option>
+                <option value="2">gatos</option>
+                <option value="3">pássaros</option>
+                <option value="4">peixes</option>
+              </select>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+    <div class="clues container">
+      <ul>
+        <li class=""><span></span>O Inglês vive na casa Vermelha.</li>
+        <li class=""><span></span>O Sueco tem Cachorros como animais de estimação.</li>
+        <li class=""><span></span>O Dinamarquês bebe Chá.</li>
+        <li class=""><span></span>A casa Verde fica do lado esquerdo da casa Branca.</li>
+        <li class=""><span></span>O homem que vive na casa Verde bebe Café.</li>
+        <li class=""><span></span>O homem que fuma Pall Mall cria Pássaros.</li>
+        <li class=""><span></span>O homem que vive na casa Amarela fuma Dunhill.</li>
+        <li class=""><span></span>O homem que vive na casa do meio bebe Leite.</li>
+        <li class=""><span></span>O Norueguês vive na primeira casa.</li>
+        <li class=""><span></span>O homem que fuma Blends vive ao lado do que tem Gatos.</li>
+        <li class=""><span></span>O homem que cria Cavalos vive ao lado do que fuma Dunhill.</li>
+        <li class=""><span></span>O homem que fuma Blue Master bebe Cerveja.</li>
+        <li class=""><span></span>O Alemão fuma Prince.</li>
+        <li class=""><span></span>O Norueguês vive ao lado da casa Azul.</li>
+        <li class=""><span></span>O homem que fuma Blends é vizinho do que bebe Água.</li>
+      </ul>
+    </div>
+  </section>
+  <footer>
+    <h5>&copy; PHSDev</h5>
+  </footer>
+
+  <script src="scr.js"></script>
+</body>
+</html>

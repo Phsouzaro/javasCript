@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        var nome = "Pedro"
+        
+        document.write(`Olá ${nome} tudo bem? seu nome tem uma total de ${nome.length} letras </br>`)
+        document.write(`Seu nome em maiusculo fica assim ${nome.toUpperCase()}</br>`)
+        document.write(`Seu nome em minusculo fica assim ${nome.toLowerCase()}</br>`)
+
+        let s = Number(2897.5)
+
+        document.write(`Esse é seu salario ${s}</br>`)
+        document.write(`Esse é seu Salario com 2 casas ${s.toFixed(2)}</br>`)
+        document.write(`Esse é seu salario com duas casas e , ${s.toFixed(2).replace('.', ',')}</br>`)
+        document.write(`Esse é seu salario em Real ${s.toLocaleString("pt-BR", {style: "currency", currency: "BRL"})}`)
+    </script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date and Time</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: cornsilk;
+        }
+        .container{
+            width: 900px;
+            margin: 0 auto;
+            background-color: rgb(216, 210, 187);
+            font: normal 20px Arial;
+        }
+
+        .container > div{
+            text-align: center;
+        }
+
+        div.formulario{
+            margin: 0 auto;
+            max-width: 300px;
+            padding: 50px;
+        }
+        .conteudoFormulario{
+            display: flex;
+            flex-direction: column;
+        }
+        .conteudoFormulario >label{
+            text-align: left; 
+        }
+        .conteudoFormulario > input{
+            height: 30px;
+            outline: none;
+            border: none;
+            margin-bottom: 20px;
+            font: normal 20px Arial;
+        }
+        .conteudoFormulario > button{
+            padding: 10px 30px;
+            align-self: center;
+            font: normal 20px Arial;
+            border-radius: 2px;
+            border: 1px black solid;
+            cursor: pointer;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class='container'>
+        <div>
+            <h1>Date and Time</h1>
+            <p id='showTIme'></p>    
+        </div>
+
+    
+    </div>
+
+    <div class='container'>
+        <div class='formulario'>
+            <form action="" id='formu'>
+                <div class='conteudoFormulario'>
+                    <label for="usuario" name='User'>Usuário</label>
+                    <input type="text" name='usuario' id='usuario'>
+                    <label for="senha" name='senha'>Senha</label>
+                    <input type="password" name='senha' id='senha'>
+                    <button class='botaoEnviar' type="button" id='botaoEnviar'>Enviar</button>
+                
+                </div>
+            </form>
+            <p id="conteudo"></p>
+        </div>
+        
+    </div>
+    
+    <!-- Fim do HTML, Inicio do Script-->
+    <script src="personalizado.js"></script>
+</body>
+</html>
