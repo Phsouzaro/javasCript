@@ -1,0 +1,31 @@
+:root{
+ --horas--: rgba(5, 57, 100, 0.986);
+ --minutos--: rgba(234, 236, 101, 0.986);
+ --segundos--: rgb(173, 76, 76);
+}
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ font: normal 40pt Arial;
+}
+.container{
+ margin: 0 auto;
+ width: 900px;
+}
+.relogio{
+ text-align: center;
+ margin:5em auto;
+}
+.horas, .minutos, .segundos{
+
+}
+.horas{
+ background-color: var(--horas--);
+}
+.minutos{
+ background-color: var(--minutos--);
+}
+.segundos{
+ background-color: var(--segundos--);
+}
