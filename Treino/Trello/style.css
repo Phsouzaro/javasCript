@@ -1,0 +1,31 @@
+*{
+ list-style-type: none;
+ padding: 0;
+ margin: 0;
+ box-sizing: border-box;
+ text-decoration: none;
+ color: white;
+ font-family: 'roboto', sans-serif;
+}
+body{
+ background-color: rgb(65, 65, 65);
+}
+.header{
+ background-color: rgb(65, 65, 65);
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+ padding: 15px 0;
+ align-items: center;
+}
+.header .header-left{
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+ width: 6em;
+ margin-left: 20px;
+ font-size: 16pt;
+}
+.header .header-left .ytb-logo-menu i {
+ color: red;
+}
