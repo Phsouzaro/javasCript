@@ -59,6 +59,7 @@
  background: var(--hover-color);
 }
 
+}
 .home-contianer .home-img{
  position: relative;
 }
@@ -71,20 +72,6 @@
  font-size: var(--normal-font-size);
  font-weight: 500;
  margin-top: 20px;
-}
-.home .scroll-down i {
- color: var(--second-color);
- font-size: 1.2em;
- animation: arrow-down ease 1s infinite;
-}
-
-@keyframes arrow-down{
- 0%{
-  transform: translateY(0);
- }
- 30%{
-  transform: translateY(10px)
- }
 }
 
 /*Home Section End*/

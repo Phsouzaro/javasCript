@@ -100,7 +100,7 @@
   width: 65%;
  }
  .bar .php::before{
-  width: 55px;
+  width: 55%;
  }
 
  .experience-card{
@@ -132,6 +132,6 @@
   background: var(--line-color);
   margin: 10px 0 22px;
  }
-.edu-list .item:hover, .bar:hover, .experience-card:hover{
+.edu-list .item:hover, .bar:hover, .experience-card:hover, .service-card:hover{
  transform: scale(1.10);
 }
