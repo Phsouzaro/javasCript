@@ -1,70 +1,70 @@
-(function(){
- function criaCalculadora(){
+(function () {
+ function criaCalculadora() {
   return {
    display: document.querySelector('.display'),
    btnClear: document.querySelector('.btn-clear'),
    /****************************************************** */
-   inicia(){
+   inicia() {
     this.cliqueBotoes();
     this.pressionaEnter();
     this.display.focus();
    },/**Inicia() */
-   btnParaDisplay(valor){
+   btnParaDisplay(valor) {
     this.display.value += valor;
    },/**btnParaDisplay() */
-   realizaConta(){
+   realizaConta() {
     let conta = this.display.value;
-    try{
+    try {
      conta = eval(conta);
-     if(!conta){
+     if (!conta) {
       alert('Conta Invalida');
       return;
      }
      this.display.value = conta;
-    }catch{
+    } catch {
      alert('Conta Invalida');
      return;
     }
    },/**realizaConta() */
-   clearDisplay(){
+   clearDisplay() {
     this.display.value = '';
    },/**clearDisplay() */
    apagaUm() {
     this.display.value = this.display.value.slice(0, -1);
    },/**apagaUm() */
-   pressionaEnter(){
+   pressionaEnter() {
     this.display.addEventListener('keyup', (e) => {
-     if(e.keyCode === 13){
+     if (e.keyCode === 13) {
       this.realizaConta();
      }
     });
    },/**pressionaEnter() */
-   cliqueBotoes(){
-    document.addEventListener('click', (e) =>{
+   cliqueBotoes() {
+    document.addEventListener('click', (e) => {
      const el = e.target;
-     if(el.classList.contains('btn-num')){
+     if (el.classList.contains('btn-num')) {
       this.btnParaDisplay(el.innerText);
      }
-     if(el.classList.contains('btn-clear')){
+     if (el.classList.contains('btn-clear')) {
       this.clearDisplay();
      }
-     if(el.classList.contains('btn-backspace')){
+     if (el.classList.contains('btn-backspace')) {
       this.apagaUm();
      }
-     if(el.classList.contains('btn-equal')){
+     if (el.classList.contains('btn-equal')) {
       this.realizaConta();
      }
     })
    },/**cliqueBotoes() */
    /***************************************** */
   };/**Return  */
-  
+
  }/*criaCalculadora()*/
 
 
  const calculadora = criaCalculadora();
 
-calculadora.inicia();
+ calculadora.inicia();
 
 
 
