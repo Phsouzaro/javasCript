@@ -1,22 +1,25 @@
 @import url('./variaveis.css');
+
 /************************************************/
-.services .container .content{
+.services .container .content {
  width: 100%;
 
 }
-.services-description h3{
+
+.services-description h3 {
  font-size: 2em;
  margin-bottom: 50px;
 }
 
-.service-list{
+.service-list {
  display: grid;
  grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
  max-width: 100%;
  margin: 0 auto;
  gap: 20px;
 }
-.service-card{
+
+.service-card {
  background: var(--card-bg-color);
  border-bottom: 3px solid var(--second-color);
  padding: 50px;
@@ -24,30 +27,36 @@
  box-shadow: var(--box-shadow);
  transition: .3s ease;
 }
-.service-card > i{
+
+.service-card>i {
  color: var(--second-color);
  font-size: 3em;
  margin-bottom: 30px;
 }
-.service-card h3{
+
+.service-card h3 {
  font-size: 1.5em;
  font-weight: 700;
  line-height: 30px;
  margin-bottom: 20px;
 
 }
-.service-card .learn-more-btn{
+
+.service-card .learn-more-btn {
  color: var(--third-color);
  cursor: pointer;
  transition: .3s ease;
 }
-.service-card .learn-more-btn i{
+
+.service-card .learn-more-btn i {
  transition: .3s ease;
 }
-.service-card:hover .learn-more-btn i{
+
+.service-card:hover .learn-more-btn i {
  transform: translateX(10px);
 }
-.service-modal{
+
+.service-modal {
  z-index: 999999;
  position: fixed;
  width: 100%;
@@ -61,8 +70,9 @@
  opacity: 0;
  transition: .5s ease;
 }
-.service-modal-body{
- position:relative;
+
+.service-modal-body {
+ position: relative;
  background: var(--modal-bg-color);
  max-width: 600px;
  margin: 20px;
@@ -72,33 +82,39 @@
  transform: translateY(-50px);
  transition: .5s ease;
 }
-.service-modal-body h3{
+
+.service-modal-body h3 {
  font-size: 2em;
 }
-.service-modal-body h4{
+
+.service-modal-body h4 {
  font-size: 1.2em;
  font-weight: 600;
  margin: 15px 0 10px;
 }
-.service-modal-body ul li{
+
+.service-modal-body ul li {
  margin-top: 15px;
 }
-.service-modal-body ul li i{
+
+.service-modal-body ul li i {
  color: var(--second-color);
 }
 
-.service-modal-body .modal-close-btn{
+.service-modal-body .modal-close-btn {
  position: absolute;
  top: 0;
  right: 0;
  margin: 20px;
  cursor: pointer;
 }
-.service-modal.hidden{
+
+.service-modal.active {
  visibility: visible;
  opacity: 1;
  transition: 0.5s ease;
 }
-.service-modal.hidden .service-modal-body{
+
+.service-modal.active .service-modal-body {
  transform: translateY(0);
 }

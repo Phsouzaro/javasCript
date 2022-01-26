@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Modelo</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+
+  <section class="container">
+    <h1>Formulario</h1>
+    <form action="post" class="formulario">
+      <div class='div-user'>
+        <input type="text" id="nometxt" class='user'>
+        <input type="radio" id='radioUser'>
+        <label for="nometxt">Usuário</label>
+      </div>
+      <div class='div-email'>
+        <input type="email" id="emailtxt" class='mail'>
+        <input type="radio" id='radioMail'>
+        <label for="emailtxt">Email</label>
+      </div>
+      <div class='div-confemail'>
+        <input type="email" id="conf-emailtxt" class='mailrep'>
+        <input type="radio" id='radioMailRep'>
+        <label for="conf-emailtxt">Confirmação de Email</label>
+      </div>
+      <div class='div-senha'>
+        <input type="password" id="senhatxt" class='pass'>
+        <input type="radio" id='radioPass'>
+        <label for="senhatxt">Senha</label>
+      </div>
+      <button type='submit'>Enviar</button>
+    </form>
+  </section>
+
+  <script src="./assets/js/main.js"></script>
+</body>
+
+</html>

@@ -6,21 +6,25 @@
 @import url('./skills.css');
 @import url('./services.css');
 @import url('./animations.css');
+@import url('./portfolio.css');
+
 /*******************************************************************************************************/
 /*Scroll Bar*/
-::-webkit-scrollbar{
+::-webkit-scrollbar {
  width: 10px;
  background: var(--scroll-bar-color);
 }
-::-webkit-scrollbar-thumb{
+
+::-webkit-scrollbar-thumb {
  background: var(--scroll-thumb-color);
  border-radius: 2em;
 }
-::-webkit-scrollbar-thumb:hover{
+
+::-webkit-scrollbar-thumb:hover {
  background: var(--scroll-thumb-hover-color);
 }
+
 /*Scroll Bar End*/
 /*******************************************************************************************************/
 
 /*******************************************************************************************************/
-
